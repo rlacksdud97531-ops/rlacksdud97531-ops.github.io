@@ -103,19 +103,25 @@ nav a:hover, footer a:hover { border-color: currentColor; }
 .project-period { text-align: right; }
 .project-copy {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(300px, 1fr);
-  gap: 64px;
+  grid-template-columns: 1fr;
+  gap: 36px;
   margin-bottom: 54px;
 }
 .project-copy h2 {
-  max-width: 760px;
+  max-width: 1040px;
   margin: 0;
   font-size: clamp(44px, 7.4vw, 94px);
   font-weight: 500;
   letter-spacing: -0.065em;
   line-height: 0.94;
 }
-dl { display: grid; align-content: end; gap: 24px; margin: 0; }
+dl {
+  display: grid;
+  align-content: start;
+  max-width: 760px;
+  gap: 24px;
+  margin: 0;
+}
 dt {
   margin-bottom: 5px;
   color: var(--muted);
@@ -186,7 +192,7 @@ footer {
   nav { gap: 18px; }
   .hero { min-height: calc(100svh - 68px); padding: 50px 0 32px; }
   .hero h1 { margin: 52px 0; font-size: clamp(68px, 24vw, 124px); }
-  .hero-bottom, .project-copy, .notice { grid-template-columns: 1fr; }
+  .hero-bottom, .notice { grid-template-columns: 1fr; }
   .hero-location { text-align: left; }
   .work, .about, .notice, .contact { padding: 74px 0; }
   .section-heading { display: block; margin-bottom: 72px; }
@@ -195,7 +201,7 @@ footer {
   .project-meta { grid-template-columns: 48px 1fr; gap: 12px 18px; }
   .project-affiliation, .project-period { grid-column: 2; }
   .project-period { text-align: left; }
-  .project-copy { gap: 36px; margin-bottom: 36px; }
+  .project-copy { gap: 30px; margin-bottom: 36px; }
   .project-copy h2 { font-size: clamp(42px, 14vw, 70px); }
   .about-copy { margin-top: 56px; }
   .notice { gap: 38px; }
