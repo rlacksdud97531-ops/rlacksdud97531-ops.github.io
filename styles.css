@@ -168,13 +168,18 @@ dd { margin: 0; font-size: 15px; line-height: 1.55; }
   line-height: 1.4;
 }
 .notice { display: block; }
-.notice > p:last-child {
+.notice-copy {
   max-width: 780px;
-  margin: 72px auto 0;
-  font-size: clamp(22px, 3vw, 34px);
-  letter-spacing: -0.025em;
-  line-height: 1.25;
+  margin-top: 72px;
 }
+.notice-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(18px, 2.2vw, 26px);
+  letter-spacing: -0.02em;
+  line-height: 1.45;
+}
+.notice-copy p + p { margin-top: 18px; }
 .contact-copy {
   margin-top: 72px;
 }
@@ -218,7 +223,7 @@ footer {
   .project-copy h2 { font-size: clamp(42px, 14vw, 70px); }
   .about-copy { margin-top: 56px; }
   .interest-list li { padding: 18px 0 18px 6px; }
-  .notice > p:last-child { margin-top: 56px; }
+  .notice-copy { margin-top: 56px; }
   .contact-copy { margin-top: 56px; }
 }
 
